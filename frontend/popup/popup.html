@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alloy Mission</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Setup</h1>
+      <form id="user-form">
+        <label>
+          Name
+          <input type="text" id="name" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" id="email" name="email" required />
+        </label>
+        <label>
+          Manager Email
+          <input type="email" id="managerEmail" name="managerEmail" required />
+        </label>
+        <label class="row">
+          <input type="checkbox" id="consent" />
+          <span>I consent to capture screenshots of my active window.</span>
+        </label>
+        <div class="buttons">
+          <button id="save" type="submit">Save</button>
+          <button id="requestPermission" type="button">
+            Request Screenshot Permission
+          </button>
+        </div>
+      </form>
+      <div id="summary" hidden>
+        <h2>Saved Details</h2>
+        <p><strong>Name:</strong> <span id="sName"></span></p>
+        <p><strong>Email:</strong> <span id="sEmail"></span></p>
+        <p><strong>Manager Email:</strong> <span id="sManagerEmail"></span></p>
+        <p id="permStatus"></p>
+      </div>
+      <p id="status"></p>
+    </div>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

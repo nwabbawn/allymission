@@ -1,0 +1,59 @@
+:root {
+  color-scheme: light dark;
+}
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+    Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 0;
+  padding: 12px;
+  width: 320px;
+}
+.hidden {
+  display: none;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+form {
+  display: grid;
+  gap: 8px;
+}
+label {
+  display: grid;
+  gap: 4px;
+  font-size: 12px;
+}
+input[type="text"],
+input[type="email"] {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #999;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.buttons,
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+button {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #888;
+  background: #2f74ff;
+  color: #fff;
+  cursor: pointer;
+}
+button#stopCapture {
+  background: #666;
+}
+#status {
+  font-size: 12px;
+  margin-top: 8px;
+}
